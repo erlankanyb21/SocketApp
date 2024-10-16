@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Login</title>
+</head>
+<body>
+    <h1>Enter Chat Room</h1>
+    <form method="post" action="{% url 'chat' %}">
+        {% csrf_token %}
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="room">Room:</label>
+        <input type="text" id="room" name="room" required>
+        <button type="submit">Join Chat</button>
+    </form>
+</body>
+</html>
+
