@@ -20,6 +20,4 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('chat/', include('chat.urls')),
-    path('api/send_message/', SendMessageAPI.as_view(), name='send_message_api'),
-
 ]
